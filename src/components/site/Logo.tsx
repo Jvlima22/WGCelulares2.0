@@ -1,5 +1,5 @@
-import darkText from "@/assets/logo-wg-dark-text.png.asset.json";
-import lightText from "@/assets/logo-wg-light-text.png.asset.json";
+import darkTextUrl from "@/assets/logo-wg-dark-text.png?url";
+import lightTextUrl from "@/assets/logo-wg-light-text.png?url";
 
 /**
  * The WG symbol stays orange in both themes; only the wordmark below it swaps
@@ -10,13 +10,13 @@ export function Logo({ className = "h-10 w-auto" }: { className?: string }) {
   return (
     <span className="inline-flex items-center">
       <img
-        src={darkText.url}
+        src={darkTextUrl}
         alt="WG Celulares — Assistência Técnica"
         className={`${className} dark:hidden`}
         loading="eager"
       />
       <img
-        src={lightText.url}
+        src={lightTextUrl}
         alt="WG Celulares — Assistência Técnica"
         className={`${className} hidden dark:block`}
         loading="eager"
